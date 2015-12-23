@@ -22,11 +22,11 @@ $(call inherit-product, device/xiaomi/armani/device.mk)
 $(call inherit-product-if-exists, vendor/xiaomi/armani/armani-vendor.mk)
 
 # Inherit some common CM stuff
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+$(call inherit-product, vendor/tipsy/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_DEVICE := armani
-PRODUCT_NAME := cm_armani
+PRODUCT_NAME := tipsy_armani
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := HM 1S
 PRODUCT_MANUFACTURER := Xiaomi
@@ -34,4 +34,4 @@ PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=armani
+    PRODUCT_NAME=tipsy_armani
